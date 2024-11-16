@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Blog Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="https://ibb.co/cCMGWW6"><img src="https://i.ibb.co/SdWhkkt/Designer.png" alt="Designer" border="0"></a>
+                <span>Your Insights</span>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Search posts...">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        <div class="nav_links">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <main>
+        <section id="create-post">
+            <h2>Create a New Post</h2>
+            <form id="post-form">
+                <input type="text" id="title" placeholder="Title" required>
+                <textarea id="content" placeholder="Content... " required></textarea>
+                <select id="category" required> 
+                    <option value="General">General</option>
+                    <option value="Tech">Tech</option>
+                    <option value="Lifestyle">Lifestyle</option>
+                    <option value="Education">Education</option>
+                </select>
+                <button type="submit">Create Post</button>
+            </form>
+        </section>
+
+   
+
+        <section id="posts">
+            <h2>All Posts</h2>
+            <div id="post-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Blog. All rights reserved.</p>
+        <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

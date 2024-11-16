@@ -1,0 +1,352 @@
+/* Add FontAwesome CDN for the search icon */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+.search-bar{
+    display: flex;
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo styling */
+.logo img {
+    height: 80px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+/* Search container styling */
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Search input styling */
+.search-container input {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #ddd;
+    flex: 1;
+}
+
+/* Search button styling */
+.search-btn {
+    background: linear-gradient(135deg, #6c63ff, #3f3f3f);
+    border: none;
+    padding: 2px 8px;
+    border-radius: 0 4px 4px 0;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-btn:hover {
+    background: linear-gradient(135deg, #5a54e0, #333);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Font Awesome icons (for search icon) */
+.fas.fa-search {
+    font-size: 18px;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav_links {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #e2bfbf;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    display: block;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+.nav-links a:hover {
+    color: #333;
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 15px;
+    }
+    .nav-links a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav_links {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .nav-links {
+        
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .nav-links a {
+        font-size: 16px;
+    }
+}
+
+
+
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+
+input, textarea, select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+textarea, select{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#posts {
+    margin-top: 20px;
+}
+
+.post {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+    margin-top: 0;
+}
+
+.post .category {
+    font-size: 12px;
+    color: gray;
+    margin: 10px;
+}
+
+.post .likes {
+    color: red;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+/* Post Styles */
+/* Post Styles */
+.post {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+.post h3 {
+    margin-top: 0;
+}
+
+.post .category {
+    color: #888;
+    font-size: 14px;
+}
+
+.post .content, .comment .comment-text {
+    margin-bottom: 10px;
+    cursor: text;
+}
+
+.post .likes {
+    color: #e74c3c;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.post .comment-section {
+    margin-top: 10px;
+}
+
+.post .show-comment-box {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.post .show-comment-box img {
+    width: 24px;
+    height: 24px;
+}
+
+.post .comment-input {
+    width: calc(100% - 100px);
+    padding: 5px;
+    margin-top: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.post .add-comment, .post .edit-content, .post .delete-post, .comment .edit-comment, .comment .delete-comment {
+    padding: 6px 12px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.post .add-comment:hover, .post .edit-content:hover, .post .delete-post:hover, .comment .edit-comment:hover, .comment .delete-comment:hover {
+    background-color: #555;
+}
+
+.post .edited {
+    color: #f39c12;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.comment {
+    margin-top: 10px;
+    padding-left: 10px;
+    border-left: 2px solid #ddd;
+}
+
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 5px 0;
+    }
+    main {
+        padding: 10px;
+    }
+}
+.comment-actions {
+    display: none; /* Hide actions by default */
+}
+
+.comment {
+    margin-bottom: 10px;
+}
+.like-button {
+    color: rgb(3, 3, 3); /* Default color */
+    font-size: 14px; /* Adjust as needed */
+    background-color: transparent; /* Transparent background */
+    border: none;
+    cursor: pointer;
+}
+
+.liked {
+    color: rgb(236, 4, 4); /* Color when liked */
+}
+.post-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px; /* Space between buttons */
+}
+
+.post-actions button, .post-actions .likes {
+    margin: 0;
+}
+
+.comment-count {
+    margin-left: 5px;
+    font-size: 16px;
+    color: #201d1d;
+}
